@@ -2,33 +2,37 @@ package src.exames;
 
 public class Colesterol extends Exame{
     
-    private int glicose;
+    private int colesterolHDL;
+    private int colesterolLDL;
 
-    public void setGlicose(int glicose){
-        this.glicose = glicose;
-    }
-
-    public int getGlicose(){
-        return glicose;
+    public void setColesterolHDL(int colesterolHDL){
+        this.colesterolHDL = colesterolHDL;
     }
     
+    public void setColesterolLDL(int colesterolLDL){
+        this.colesterolLDL = colesterolLDL;
+    }
+
+    public int getColesterolHDL(){
+        return colesterolHDL;
+    }
+
+    public int getColesterolLDL(){
+        return colesterolLDL;
+    }
+    
+
     @Override
     public void cadastrarExame(){
         setInformacoesPaciente();
-        System.out.println("Digite a quantidade de gcliose por mg/l: ");
-        setGlicose(scan.nextInt());
+        
+        
         scan.close();
     }
     
     @Override
     protected void classficarResultado(){
-        if (glicose < 100) {
-            System.out.println("Resultado: Normoglicemia");
-        } else if (glicose >= 100 && glicose < 126){
-            System.out.println("Resultado: Pré-diabetes");
-        } else{
-            System.out.println("Resultado: Diabetes estabelecido");
-        }
+
     }
 
     @Override

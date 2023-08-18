@@ -6,6 +6,7 @@ public class Principal {
         
         Exame colesterol = new Colesterol();
 
+        
         colesterol.cadastrarExame();
         colesterol.mostrarResultado();
     
