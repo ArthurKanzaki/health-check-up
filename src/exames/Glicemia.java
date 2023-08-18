@@ -1,3 +1,4 @@
+package src.exames;
 public class Glicemia extends Exame{
 
     private int glicose;
