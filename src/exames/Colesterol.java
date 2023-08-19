@@ -45,7 +45,6 @@ public class Colesterol extends Exame{
         System.out.println("Digite o risco do paciente (A - Alto; M - Médio; B Baixo)");
         this.setRiscoPaciente(scan.next());
 
-        scan.close();
     }
     
     @Override

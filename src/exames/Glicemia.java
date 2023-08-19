@@ -17,7 +17,6 @@ public class Glicemia extends Exame{
         this.setInformacoesPaciente();
         System.out.println("Digite a quantidade de glicose por mg/L: ");
         this.setGlicose(scan.nextInt());
-        scan.close();
     }
     
     @Override

@@ -48,13 +48,14 @@ public abstract class Exame {
     protected void setInformacoesPaciente(){
         
         System.out.println("Digite o nome: ");
-        setNomePaciente(this.scan.nextLine());
+        setNomePaciente(scan.next());
         
         System.out.println("Digite o tipo Sanguíneo: ");
-        setTipoSanguineo(this.scan.nextLine());
+        setTipoSanguineo(scan.next());
         
         System.out.println("Digite o ano de nascimento: ");
-        setAnoNascimento(this.scan.nextInt());
+        setAnoNascimento(scan.nextInt());
+
     }
 
 // Ações

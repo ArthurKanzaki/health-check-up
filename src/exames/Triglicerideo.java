@@ -17,7 +17,6 @@ public class Triglicerideo extends Exame {
         this.setInformacoesPaciente();
         System.out.println("Digite a quantidade de Triglicerídeos por mg/L: ");
         this.setTriglicerideo(scan.nextInt());
-        scan.close();
     }
     
     @Override
