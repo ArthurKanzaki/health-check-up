@@ -48,18 +48,18 @@ public abstract class Exame {
     protected void setInformacoesPaciente(){
         
         System.out.println("Digite o nome: ");
-        setNomePaciente(scan.nextLine());
+        setNomePaciente(this.scan.nextLine());
         
         System.out.println("Digite o tipo Sanguíneo: ");
-        setTipoSanguineo(scan.nextLine());
+        setTipoSanguineo(this.scan.nextLine());
         
         System.out.println("Digite o ano de nascimento: ");
-        setAnoNascimento(scan.nextInt());
+        setAnoNascimento(this.scan.nextInt());
     }
 
 // Ações
 
-    protected abstract void classficarResultado();
+    protected abstract String classficarResultado();
     public abstract void mostrarResultado();
     public abstract void cadastrarExame();
 

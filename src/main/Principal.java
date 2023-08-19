@@ -1,14 +1,16 @@
 import src.exames.Colesterol;
-import src.exames.Exame;
 
 public class Principal {
     public static void main(String[] args) {
         
-        Exame colesterol = new Colesterol();
-
+        //Exame glicemia = new Glicemia();
+        //glicemia.cadastrarExame();
+        //glicemia.mostrarResultado();
         
-        colesterol.cadastrarExame();
-        colesterol.mostrarResultado();
+        Colesterol exameColesterol = new Colesterol();
+
+        exameColesterol.cadastrarExame();
+        exameColesterol.mostrarResultado();
     
 
     }
